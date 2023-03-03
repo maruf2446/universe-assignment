@@ -1,0 +1,201 @@
+/*=================
+    Google fonts 
+==================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*==================
+     Global css
+===================*/
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+h3{
+    font-family: 'Inter', sans-serif;
+}
+
+/*==================
+    body section
+===================*/
+.card-div{
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 16px;
+}
+.card-div .img-all{
+    width: 100%;
+    height: 180px;
+}
+.img-details {
+    margin: 25px 0 10px 0;
+}
+.img-details h2{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    color: #111111;
+    margin-bottom: 16px;
+}
+.img-details p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #585858;
+    margin: 0;
+}
+
+.left-card h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 14px;
+    color: #111111;
+}
+
+/*=======================
+    custom modal made
+========================*/
+.modals{
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   background-color: rgba(0,0,0,0.50);
+   width: 100%;
+   height: 100%;
+   overflow-x: hidden;
+   overflow-y: auto;
+   z-index: 1000;
+   transition: all 0.3s ease-in-out;
+}
+.main-container{
+    position: relative;
+}
+.main-container .delete-div{
+    position: absolute;
+    top: 5%;
+    right: -2%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.modal-container{
+    max-width: 1100px;
+    width: 100%;
+    background-color: #FFF;
+    margin: 50px auto 0;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 90px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 15px;
+}
+
+.leftSide-div{
+    width: 100%;
+    background: rgba(235, 87, 87, 0.05);
+    border: 1px solid #EB5757;
+    border-radius: 16px;
+    padding: 30px;
+}
+.leftSide-div p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    color: #111111;
+}
+
+.three-card-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+.three-card-div .all-card{
+    width: 33.33%;
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin: 0;
+}
+.three-card-div .all-card h3{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #03A30A;
+}
+
+.details-div{
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+.features-div,
+.Integrations-div{
+   width: 50%;
+}
+.features-div h2,
+.Integrations-div h2{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #111111;
+}
+.features-div ul,
+.Integrations-div ul{
+   margin: 0;
+}
+.features-div ul li,
+.Integrations-div ul li{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 26px;
+    color: #585858;
+}
+
+.rightSide-div{
+    width: 100%;
+    padding: 25px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    border-radius: 16px;
+}
+.rightSide-div .all-img{
+    width: 100%;
+    height: 210px;
+}
+.rightSide-div h1{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    margin: 25px 0 16px 0;
+    text-align: center;
+    color: #111111;
+}
+.rightSide-div p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #585858;
+}
+
+.img-div{
+    position: relative;
+}
+.img-div .badge{
+   position: absolute;
+   top: 12px;
+   right: 6px;
+}
+
+.adding{
+    display: none;
+}
