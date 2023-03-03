@@ -1,5 +1,5 @@
 const universeContainer = document.getElementById('universe-container');
-const AllData = []
+const AllData = [];
 const lodUser = () =>{
     fetch('https://openapi.programming-hero.com/api/ai/tools')
     .then(res => res.json())
@@ -33,7 +33,7 @@ const displayUniverse = datas =>{
                  <p class="">${universe.published_in}</p>
                </div>
                <div>
-                 <button><i class="fa-solid fa-arrow-right"></i></button>
+                 <button onclick="lodeUniveselDetails" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#UniverseModal"><i class="fa-solid fa-arrow-right"></i></button>
                </div>
             </div>
         </div>
@@ -43,8 +43,9 @@ const displayUniverse = datas =>{
 }
 
 document.getElementById('btn-show-all').addEventListener('click', () =>{
-    universeContainer.textContent = ''
+    universeContainer.textContent = '';
      showAllFun(AllData[0]);
+
 })
 
 const showAllFun = datas =>{
@@ -67,7 +68,7 @@ const showAllFun = datas =>{
                  <p class="">${universe.published_in}</p>
                </div>
                <div>
-                 <button><i class="fa-solid fa-arrow-right"></i></button>
+                 <button onclick="lodeUniveselDetails" href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#UniverseModal"><i class="fa-solid fa-arrow-right"></i></button>
                </div>
             </div>
         </div>
