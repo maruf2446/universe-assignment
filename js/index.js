@@ -22,6 +22,7 @@ const dataFile = (file) =>{
       btnShow.classList.remove("d-none");
     }
     else{
+      // file = file.slice(0, 6);
       btnShow.classList.add("d-none");
     }
    file.forEach(elements => {
